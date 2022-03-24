@@ -100,5 +100,6 @@ module.exports = {
     // 'fulltext-search',
     '@vuepress/back-to-top', //맨위로 버튼
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/last-updated' // 마지막 수정일 기재
   ]
 }
