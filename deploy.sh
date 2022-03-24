@@ -21,7 +21,7 @@ rm -rf GuSubeen.github.io
 # git init
 git add .
 git commit -m "$1"
-git push origin master
+git push origin main
 
 
 cd -
