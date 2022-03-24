@@ -41,12 +41,20 @@ module.exports = {
         link: '/guide/',
       },
       {
+        text: '게시판',
+        link: '/guest/',
+      },
+      {
         text: '블로그',
         link: '/blog/',
       },
       {
         text: 'Config',
         link: '/config/'
+      },
+      {
+        text: '깃허브',
+        link: 'https://github.com/GuSubeen/GuSubeen.github.io'
       },
       {
         text: 'VuePress',
