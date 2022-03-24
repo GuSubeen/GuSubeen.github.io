@@ -1,0 +1,28 @@
+{
+  "name": "practice_Vuepress",
+  "homepage": ".",
+  "version": "0.0.1",
+  "description": "Vuepress 블로그 생성을 위한 샘플입니다.",
+  "main": "index.js",
+  "authors": {
+    "name": "subeen",
+    "email": "rntnqls9@naver.com"
+  },
+  "repository": "/GuSubeen.github.io/",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "deploy": "bash deploy.sh",
+    "eject": "vuepress eject"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/theme-default": "^1.9.7",
+    "vuepress": "^1.5.3",
+    "vuepress-plugin-fulltext-search": "^2.2.1"
+  },
+  "dependencies": {
+    "next-redux-wrapper": "^7.0.5"
+  }
+}
