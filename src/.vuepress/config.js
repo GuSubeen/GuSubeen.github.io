@@ -84,10 +84,6 @@ module.exports = {
           children: ['3-문제', '3-해결방안']
         },
         {
-          title: '필요한 추가작업',
-          children: ['4-추가작업']
-        },
-        {
           title: 'Tip',
           collapsable: true, 
           children: ['example-1', 'example-2', 'example-3', 'example-4']
