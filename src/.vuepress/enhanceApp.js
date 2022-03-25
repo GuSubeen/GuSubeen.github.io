@@ -11,4 +11,22 @@ export default ({
   siteData // site metadata
 }) => {
   // ...apply enhancements for the site.
+
+// 전체 post의 comment 동일 문제점
+// https://62che.com/blog/vuepress/ 참고 -- 해결안됨
+// router.afterEach((to, from) => {
+//   if (from.path !== to.path) {
+//     if (typeof window !== 'undefined' && window.Comment) {
+//       setTimeout(() => {
+//         console.log('Comment is exists and try to load!')
+//         window.Comment.reset({ reload: true })
+//       }, 0)
+//     }
+//   } else {
+//     // same page but hash changed
+//   }
+// })
+
 }
+
+  

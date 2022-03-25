@@ -37,20 +37,20 @@ module.exports = {
     // 메뉴바 만들기
     nav: [
       {
-        text: '가이드',
-        link: '/guide/',
+        text: '태그',
+        link: '/tags/',
       },
       {
         text: '게시판',
-        link: '/guest/',
+        link: '/notice/',
       },
       {
         text: '블로그',
         link: '/blog/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: '작성자',
+        link: '/authors/'
       },
       {
         text: '깃허브',
@@ -63,28 +63,33 @@ module.exports = {
     ],
     // 사이드바 만들기
     sidebar: {
-      '/guide/': [
-        {
-          title: '가이드',
-          collapsable: false, // 메뉴 접기, 펴기
-          children: [
-            '', // guide의 readme파일에 연결됨.
-            'using-vue',
-          ]
-        }
-      ],
       '/blog/': [
         {
-          title: '한글 입숨로렘',
+          title: 'Vuepress 시작하기',
           collapsable: true, 
           //children에 readme 파일을 넣지 않으면 사이드바에는 만들어지지 않고 블로그 메뉴 누르면 디폴트로 나타남
           //readme 파일에 블로그 메뉴의 개요 적어놓고 링크 걸어놓으면 깔끔할듯.
           children: [ 
-            'exam1', 'exam2', 'exam3', 'exam4'
+            '1-설치','1-깃허브 배포','1-플러그인'
           ]
         },
         {
-          title: '입숨로렘',
+          title: '레이아웃 수정하기',
+          collapsable: true, 
+          children: ['2-기본수정', '2-utterance']
+        },
+        {
+          title: '해결할 문제들',
+          collapsable: true, 
+          children: ['3-문제', '3-해결방안']
+        },
+        {
+          title: '필요한 추가작업',
+          collapsable: true, 
+          children: ['4-추가작업']
+        },
+        {
+          title: 'Tip',
           collapsable: true, 
           children: ['example-1', 'example-2', 'example-3', 'example-4']
         }
@@ -99,7 +104,9 @@ module.exports = {
     // 검색 범위 확장(페이지 제목, 헤더 -> 내용도!)
     // 'fulltext-search',
     '@vuepress/back-to-top', //맨위로 버튼
-    '@vuepress/plugin-medium-zoom',
+    //'@vuepress/plugin-medium-zoom',
+    'vuepress-plugin-code-copy', //코드 복사
     '@vuepress/last-updated' // 마지막 수정일 기재
+    //'authors'
   ]
 }

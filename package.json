@@ -21,6 +21,8 @@
     "@vuepress/plugin-last-updated": "^1.9.7",
     "@vuepress/theme-default": "^1.9.7",
     "vuepress": "^1.5.3",
+    "vuepress-plugin-authors": "^0.0.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-fulltext-search": "^2.2.1"
   },
   "dependencies": {
