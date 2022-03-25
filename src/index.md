@@ -3,7 +3,7 @@ home: true
 heroImage: /images/main_icon.png
 tagline: Vuepress 블로그 생성을 위한 샘플입니다.
 actionText: 눌러주세요 # Quick Start →
-actionLink: /tags/
+actionLink: /blog/
 features:
 - title: 안녕하세요! #Feature 1 Title
   details: 구수빈입니다. #Feature 1 Description
