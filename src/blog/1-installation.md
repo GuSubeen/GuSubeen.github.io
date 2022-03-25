@@ -4,17 +4,18 @@
 Vuepress란 "Vue를 기반으로 하는 정적 사이트 생성기"이다.
 
 ### 정적사이트(Static Site)
-정적사이트(Static Site)란 HTML, CSS, Javascript만 사용하여 만들어지며 Server Side에서 DB를 처리하거나 Request로 Data를 받아서 처리하는 것이 아니므로 작성/수정/삭제 등은 불가능하며 페이지를 조회하는 것만 가능하다.  
+정적사이트(Static Site)란 HTML, CSS, Javascript로만 만들어진 사이트를 의미한다. 서버(Web Server)는 사용자의 요청(Request)에 해당하는 **미리 저장된 파일**(HTML, 이미지, Javascript 등)을 그대로 전달하기 때문에 작성/수정/삭제 등은 불가능하며 페이지조회만 가능하다. 
 대표적인 정적사이트로 `Github Page`가 있으며 Github Page는 github에 올라온 파일(HTML, CSS, Javascript)을 기반으로 작동한다.  
 
 
 ### 정적사이트 생성기(Static Site Generator)
-정적사이드 생성기는 정적 사이트를 만들어주는 도구 or 프레임워크로, 대표적인 SSG로는 Ruby 기반의 `Jekyll`과 Go 기반의 `Hugo` 등이 있다. Vuepress 또한 Vue 기반의 SSG이다. 
+SSG란 정적사이트를 만들어주는 도구로 콘텐츠와 파일을 읽어 이를 HTML로 변환시키는 역할을 한다.  
+대표적인 SSG로는 Ruby 기반의 `Jekyll`과 Go 기반의 `Hugo`, Vue 기반의 `Vuepress` 등이 있다.
 
-정적사이트 & SSG 내용 출처: [개발자 황준일님의 TIL 블로그](https://junilhwang.github.io/TIL/Vuepress/Starter/#%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3-static-site)  
+<br>
 
 ## Vuepress 설치하기
-Vuepress를 시작하려면 사전에 npm(or yarn)을 설치해야 한다.  
+Vuepress를 시작하려면 사전에 npm이나 yarn을 설치해야 한다.  
 필자는 npm을 이용해 yarn을 설치하였다.
 
 ### yarn 설치하기
@@ -23,7 +24,7 @@ Vuepress를 시작하려면 사전에 npm(or yarn)을 설치해야 한다.
 $ npm -v                # npm이 설치되어 있는지 확인
 $ npm install -g yarn   # yarn 설치
 $ yarn -v               # yarn이 잘 설치되었나 확인
-```
+```  
 
 2. Myblog라는 이름의 폴더를 생성하여 폴더에서 터미널을 열어 yarn init 명령어를 입력한다.
 ```Bash
@@ -82,38 +83,35 @@ repository url
 
 ```
 
-### 디렉토리 구조
+### 내 디렉토리 구조
 ```
-docs ├── package.json 
+docs
+├── node_modules
+├── package.json
+├── yarn.lock
 └── src 
-├── .vuepress 
-│ ├── components (Optional) 
-│ ├── theme (Optional) 
-│ │ └── Layout.vue 
-│ ├── public (Optional) 
-│ ├── styles (Optional) 
-│ │ ├── index.styl 
-│ │ └── palette.styl 
-│ ├── templates (Optional, Danger Zone) 
-│ │ ├── dev.html 
-│ │ └── ssr.html 
-│ ├── config.js (Optional) 
-│ └── enhanceApp.js (Optional) 
-├── config 
-│ └── README.md 
-├── guide 
-│ ├── README.md 
-│ └── using-vue.md 
-└── index.md
+    ├── .vuepress 
+    │   ├── components 
+    │   ├── theme
+    │   │  └── Layout.vue 
+    │   ├── public
+    │   │  └── images  
+    │   ├── styles
+    │   │  ├── index.styl 
+    │   │  └── palette.styl 
+    │   ├── config.js
+    │   └── enhanceApp.js
+    └── index.md
 ```
 
 ### 실행 및 빌드
 - 개발모드로 실행
 ```bash
 cd docs
-yarn install
+# yarn install
 yarn dev
 ```
+개발모드로 실행하는 경우 localhost:8080
 
 - 빌드(Build)  
 build와 deploy는 다음 포스트에 자세히 설명한다.
@@ -144,5 +142,6 @@ module.exports = {
 ### 출처
 ---
 - [vuepress.org](https://vuepress.vuejs.org/guide/getting-started.html#prerequisites)  
-- [개발자 황준일의 TIL 블로그](https://junilhwang.github.io/TIL/Vuepress/Starter/#%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3-dynamic-site)  
-- [날마다 새롭게 또 날마다 새롭게_아무유님 블로그](https://muyu.tistory.com/entry/Vuepress-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)  
+- [Titus '열정의 공간: 정적인 페이지와 동적인 페이지의 차이점이란?](https://titus94.tistory.com/4)
+- [개발자 황준일의 TIL 블로그: Vuepress 시작하기](https://junilhwang.github.io/TIL/Vuepress/Starter/#%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3-dynamic-site)  
+- [날마다 새롭게 또 날마다 새롭게: Vuepress 시작하기](https://muyu.tistory.com/entry/Vuepress-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)  
