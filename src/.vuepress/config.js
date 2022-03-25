@@ -70,23 +70,23 @@ module.exports = {
           //children에 readme 파일을 넣지 않으면 사이드바에는 만들어지지 않고 블로그 메뉴 누르면 디폴트로 나타남
           //readme 파일에 블로그 메뉴의 개요 적어놓고 링크 걸어놓으면 깔끔할듯.
           children: [ 
-            '1-설치','1-깃허브 배포','1-플러그인'
+            '1-installation','1-githubdeploy','1-plugin'
           ]
         },
         {
           title: '레이아웃 수정하기',
           collapsable: true, 
-          children: ['2-기본수정', '2-utterance']
+          children: ['2-changelayout', '2-utterance']
         },
         {
           title: '해결할 문제들',
           collapsable: true, 
-          children: ['3-문제', '3-해결방안']
+          children: ['3-issue', '3-howto']
         },
         {
           title: 'Tip',
           collapsable: true, 
-          children: ['example-1', 'example-2', 'example-3', 'example-4']
+          children: []
         }
       ]
     }
