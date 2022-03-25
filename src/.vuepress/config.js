@@ -85,7 +85,6 @@ module.exports = {
         },
         {
           title: '필요한 추가작업',
-          collapsable: true, 
           children: ['4-추가작업']
         },
         {
