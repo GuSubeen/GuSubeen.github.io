@@ -44,7 +44,7 @@
   }
   ```
 ### 3. google-analytics
-블로그에 어떤 글이 인기가 많은지 또는 유입량을 데이터로 보여준다.
+블로그의 유입량을 보여주는 기능을 한다.
 ```js
 // docs/.vuepress/config.js
 module.export = {
@@ -72,5 +72,5 @@ plugins: [
 
 ### 참고
 - [v1.vuepress.vuejs.org](https://v1.vuepress.vuejs.org/zh/plugin/)
-- [limdongjin](https://limdongjin.github.io/vuejs/vuepress/#install)
-- [기억보다 기록을](https://kyounghwan01.github.io/blog/Vue/vuepress/vuepress-plugin/)
+- [limdongjin : Tutorial :: Vuepress로 기술문서 빠르게 만들어보자!](https://limdongjin.github.io/vuejs/vuepress/#install)
+- [기억보다 기록을 : vuePress plugin 사용법](https://kyounghwan01.github.io/blog/Vue/vuepress/vuepress-plugin/)

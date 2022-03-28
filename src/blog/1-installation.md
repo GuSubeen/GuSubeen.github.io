@@ -1,3 +1,7 @@
+---
+date: 2022-03-23 13:00:00
+---
+
 # Vupress 시작하기
 
 ## Vuepress란?
@@ -111,7 +115,7 @@ cd docs
 # yarn install
 yarn dev
 ```
-개발모드로 실행하는 경우 localhost:8080
+개발모드로 실행하는 경우 localhost:8080로 접속한다.
 
 - 빌드(Build)  
 build와 deploy는 다음 포스트에 자세히 설명한다.

@@ -15,7 +15,8 @@ jekyll의 경우 vscode에서 작성하고 저장하고 push하면 자동빌드�
 스크립트 파일의 위치도 중요한데 docs 밑에 추가한다. (package.json과 같은 위치에 추가하면 된다.)
 
 ## deploy.sh 작성
-- deploy.sh 작성하기
+- deploy.sh 작성하기 
+  (개발자 황준일님의 TIL 블로그를 참고하였으며 링크는 참고부분에 있다.)
     ```sh
     #!/usr/bin/env sh
 
@@ -29,6 +30,7 @@ jekyll의 경우 vscode에서 작성하고 저장하고 push하면 자동빌드�
     cd src/.vuepress/dist
 
     # git clone
+    # 각자의 깃허브 주소를 넣어야 한다.
     git clone https://github.com/GuSubeen/GuSubeen.github.io.git/
 
     # .git의 내용을 복사한 후 clone은 삭제한다.
@@ -54,6 +56,7 @@ jekyll의 경우 vscode에서 작성하고 저장하고 push하면 자동빌드�
 deploy.sh로만 build + add + commit + push를 하면 dist 폴더만 push가 되어 블로그는 생성되나 추후에 수정이 필요한 경우나 다른 사람과 협업을 하는 경우라면 곤란해지게 된다.  
 이를 해결하기 위해 commit.sh를 이용해서 전체문서 파일이 배포파일과 다른 브랜치에 저장되도록 한다.
 - commit.sh 작성하기
+  (개발자 황준일님의 TIL 블로그를 참고하였으며 링크는 참고부분에 있다.)
     ```sh
     #!/usr/bin/env sh
 
@@ -75,5 +78,5 @@ deploy.sh로만 build + add + commit + push를 하면 dist 폴더만 push가 되
 <br><br>
 
 ### 참고
-- [개발자 황준일의 TIL](https://junilhwang.github.io/TIL/Vuepress/Deploy/#_1-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9-%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5)
-- [coding apple](https://codingapple.com/unit/vue-build-and-deploy-with-github-pages/)
+- [개발자 황준일의 TIL : github page에 배포하기](https://junilhwang.github.io/TIL/Vuepress/Deploy/#_1-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9-%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%BC-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5)
+- [coding apple : 만든 Vue 사이트 build & Github Pages로 배포하려면](https://codingapple.com/unit/vue-build-and-deploy-with-github-pages/)
